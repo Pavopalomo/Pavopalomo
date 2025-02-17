@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            div.nav-logo{
+                background-color: beige;
+            }
+            
+            div.nav-logo h1{
+                display:flex;
+                justify-content:flex-start;
+                background-color: yellow;
+                color:black;
+            }
+            div.action-buttons{
+                display: flex;
+                justify-content:space-around;
+                background-color: yellow;
+                border-top:0px;
+                border-left:0px;
+                border-right:0px;
+                border-style:dashed;
+                
+            }
+            body.home{
+                background-color: yellow;
+            }
+            .caja-de-busqueda{
+                border-top:10px;
+                display:flex;
+                justify-content:center;
+                align-content:center;
+            }
+            div.caja-de-busqueda{
+                border-top:50px;
+                border-bottom:50px;
+                border-left:0px;
+                border-right:0px;
+                border-style:dashed;
+                border-color:transparent;
+            }
+            .btn-search{
+                width:70px;
+                height:20px;
+            }
+            .grid{
+                display:flex;
+                justify-content: space-around;
+                flex-flow:row wrap; 
+            }
+            ul.grid li{
+                list-style-type:none;
+            }
+        </style>
+        
+    </head>
+
+    <body class="home">
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="https://wikileaks.org">
+                <h1>WikiLeaksBootleg</h1>
+                </a>
+            </div>
+            <div class="action-buttons">
+                <a class="button-face donate-link" href="https://shop.wikileaks.org/donate">Donate</a>
+                <a class="button-face submit-link" href="#submit">  Submit</a>
+              </div>
+        </div>
+
+        <div class="caja-de-busqueda">
+            <form class="search-form" action="https://search.wikileaks.org/" method="get">
+                <input class="search-query" type="text" name="q" value="" placeholder="Search Keywords">
+                <button class="btn-search" type="submit">submit</button>
+            </form>
+        </div>
+        <ul class="grid">
+            <li class="fishrot">
+                <a href="https://wikileaks.org/fishrot/">
+                    <img src="https://wikileaks.org/IMG/arton716.jpg" width="360" height="240">
+                </a>
+            </li>
+            <li class="OPCW DOUMA">
+                <a href="/opcw-douma/#OPCW-DOUMA%20-%20Release%20Part%204">
+                    <img src="https://wikileaks.org/IMG/arton715.png" width="360" height="240">
+                </a>
+            </li>
+        </ul>
+    </body>
+</html>
