@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:white;
+            }
+            #encabezado{
+                background-color:white;
+                font-size: 2em;
+                font-weight: bold;
+                color:rgb(0, 0, 122);
+            }
+            ol.subtitles li::marker{
+               font-size: 2em;
+               font-weight: bold;
+            }
+            ol.tags li::marker{
+               font-size: 1em;
+            }
+            ul.QandA{
+                list-style-type: disc;
+            }
+            ul.second{
+                list-style-type: circle;
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="subtitles">
+            <li>
+                <div id="encabezado">
+                    HTML
+                </div>
+                <ul class="QandA">                
+                    <li><strong>What is HTML?</strong><br>
+                    Hypertext Markup Language<br>
+                    </li>
+                    <br>
+                    <li><strong>Explain the head and the body tags.</strong><br>
+                        The head is where it contains data about the page.<br>
+                        The body is what is going to show in the page.<br>
+                    </li>
+                    <br>
+                    <li><strong>Explain the section, article, aside, header,footer tag.</strong><br>
+                        <ol class="tags">
+                            <li>
+                                The section tag is used to group together related elements.
+                            </li>
+                            <li>
+                                The article tag specifies independent, self.contained content.
+                            </li>
+                            <li>
+                                The aside tag marks up content that is indirectly related to the main article content of a page.
+                            </li>
+                            <li>
+                                The header tag specifies a header for a document or section.
+                            </li>
+                            <li>
+                                The footer tag defines a footer for a document or section.
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Create an unordered list. Create an ordered list.</strong><br>
+                        This section of Q&A is an unordered list and it contains and ordered list.
+                    </li>
+
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <div id="encabezado">
+                    CSS
+                </div>
+                <ul class="QandA">
+                    <li>
+                        <strong>What is CSS</strong><br>
+                        Cascading Style Sheets
+                    </li>
+                    <br>
+                    <li>
+                        <strong>What is the purpose of CSS</strong><br>
+                        CSS describes the presentation of a document written in HTML.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>How do you apply a CSS to an HTML</strong><br>
+                        <ol class="tags">
+                            <li>
+                                You can implement inline, which it is apply to a single element.
+                            </li>
+                            <li>
+                                Using the tag 'style' in the 'head' section of the HTML document.
+                            </li>
+                            <li>
+                                Creating a separate .css file and linking it to the HTML document.
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>
+                        <strong>What is a Selector? What is a CSS rule</strong><br>
+                        A selector is a pattern of elements and other ter terms that tell the browser which HTML elements should be selected to have the CSS property values.<br>
+                        A rule is a statement that provides CSS with instructions to perform or how to behave.
+                    </li>
+                    <li>
+                        Explain a:
+                        <ul class="second">
+                            <li>
+                                Tag <strong>Selector</strong> : used to select the HTML elements you want to style.
+                            </li>
+                            <li>
+                                Class <strong>Selector</strong> : selects all elements that have the given class attribute denoted by the class name prefixed with a period.
+                            </li>
+                            <li>
+                                Tag and Class <strong>Selector</strong> :selects all tags that are realeted with a class specified.
+                            </li>
+                            <li>
+                                Id <strong>Selector</strong> : matches an element based on the value of the element's id attribute.
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        What is a <strong>class</strong>? What is an <strong>id</strong>? How are they related to CSS?<br>
+                        A <b>class</b> is a group of elements that are the same or similar.<br>
+                        An <b>id</b> is a identifier that can be assigned to an element on a webpage.<br>
+                        Both <b>classes</b> and <b>Ids</b> are used to identified or select a target and style <b>HTML</b> elements.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Explain the CSS Box Model? Show an example.</strong><br>
+                        The <b>CSS Box Model</b> is a container that contains multiple properties including borders, margin, padding, and the content itself.<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReo_quRP1sQ-bKlxHjfHBWjZWEWJjSnuZVJQ&s" width="408" height="202" alt="CSS Box Model example">
+                    </li>
+                    <br>
+                    <li>
+                        <strong>How can you change the font color using CSS?</strong><br>
+                        Add the appropriate CSS selector and define the color property with the value you want.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>
