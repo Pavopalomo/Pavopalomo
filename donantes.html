@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donantes</title>
+</head>
+<body>
+    <h1>Lista de Donantes</h1>
+   
+    <a href="/">Bienvenida</a>
+    <br><br>
+    <a href="/escuelas">Bienvenida Escuelas</a>
+    <br><br>
+    <a href="/equipo">Bienvenida Equipo</a>
+    <br><br>
+    <a href="/opinion">Bienvenida Opinion</a>
+
+    <script>
+        async function obtenerDonantes() {
+            //Agregar el url adecuado
+          const listaEscuelas= await fetch("/api/donantes");
+          const jsonLE=await listaEscuelas.json();
+          console.log(jsonLE);
+          //Muestra las escuelas en el html
+
+        }
+        obtenerDonantes();
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <main>
+            Opinion
+            <strong>Links:</strong>
+            <br><br>
+            <a href="/">Bienvenida</a>
+            <br><br>
+            <a href="/escuelas">Bienvenida Escuelas</a>
+            <br><br>
+            <a href="/donantes">Bienvenida Donantes</a>
+            <br><br>
+            <a href="/equipo">Bienvenida Equipo</a>
+            <br><br>
+            <strong>Opinion:</strong> Yo creo que el colonialismo digital puede afectar mi carrera profesional
+            sin embargo tambien si no cuido en lo que trabajo yo podria ser parte del colonialismo digital.
+            En el caso de que me afecte en mi carrera profesional, entonces mis objetivos de vida podrian cambiar
+            drasticamente, por el otro lado si yo no cuido mi trabajo y contribuyo con el colonialismo entonces
+            tendre que reevaluar mi posición en la vida y tambien cambiar mis acciones.
+            <br><br>
+            El <strong>FreedomBox</strong> es un servidor privado para personas que aun están aprendiendo a manejar
+            servidores. Te deja instalar y configurar aplicaciones de servidores facil y puede correr en hardware
+            con recursos limitados. 
+
+            <div id="img">
+
+            </div>
+            <p>
+                Cargo la imagen sin problema, no estoy seguro si la imagen que tenia que cargar era algo que yo tenia descargado,
+                pero lo que yo utilize fue una url. Probablemente, si utilizo una imagen que tengo descargado y la direccion que pongo
+                es de mi computadora, no vaya a funcionar porque el servidor solo le entrega al cliente la direccion, no la imagen en si.
+            </p>
+
+        </main>
+        <script>
+            async function obtenerMiembros() {
+                //Agregar el url adecuado
+              const listaEscuelas= await fetch("/api/opinion");
+              const jsonLE=await listaEscuelas.json();
+              console.log(jsonLE.imagen);
+              let image=document.createElement("img");
+              image.src=jsonLE.imagen;
+              document.getElementById("img").appendChild(image);
+              //Muestra las escuelas en el html
+    
+            }
+            obtenerMiembros();
+        </script>
+    </body>
+</html>

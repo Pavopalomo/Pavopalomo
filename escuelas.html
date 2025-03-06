@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escuelas</title>
+</head>
+<body>
+    <h1>Lista de escuelas</h1>
+   
+    <a href="/">Bienvenida</a>
+    <br><br>
+    <a href="/donantes">Bienvenida Donantes</a>
+    <br><br>
+    <a href="/equipo">Bienvenida Equipo</a>
+    <br><br>
+    <a href="/opinion">Bienvenida Opinion</a>
+
+    <script>
+        async function obtenerEscuelas() {
+            //Agregar el url adecuado
+          const listaEscuelas= await fetch("/api/escuelas");
+          const jsonLE=await listaEscuelas.json();
+          console.log(jsonLE);
+          //Muestra las escuelas en el html
+
+        }
+        obtenerEscuelas();
+    </script>
+</body>
+</html>

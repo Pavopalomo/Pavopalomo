@@ -1,0 +1,30 @@
+<html>
+    <head>
+           
+    </head>
+    <body>
+        <main>
+            Equipo
+            ver datos en consola
+            <br><br>
+            <a href="/">Bienvenida</a>
+            <br><br>
+            <a href="/escuelas">Bienvenida Escuelas</a>
+            <br><br>
+            <a href="/donantes">Bienvenida Donantes</a>
+            <br><br>
+            <a href="/opinion">Bienvenida Opinion</a>
+        </main>
+        <script>
+            async function obtenerMiembros() {
+                //Agregar el url adecuado
+              const listaEscuelas= await fetch("/api/equipo");
+              const jsonLE=await listaEscuelas.json();
+              console.log(jsonLE);
+              //Muestra las escuelas en el html
+    
+            }
+            obtenerMiembros();
+        </script>
+    </body>
+</html>
