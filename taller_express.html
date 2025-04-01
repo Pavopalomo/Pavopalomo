@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>taller_express</title>
+</head>
+<body>
+
+    <script>
+        async function obtenerMuseo() {
+            //Agregar el url adecuado
+          const jsonM= await fetch("/api/museo");
+          const jsonLE=await jsonM.json();
+          console.log(jsonLE);
+        }
+        obtenerMuseo();
+    </script>
+</body>
+</html>
